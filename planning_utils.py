@@ -89,6 +89,8 @@ def valid_actions(grid, current_node):
         valid_actions.remove(Action.WEST)
     if y + 1 > m or grid[x, y + 1] == 1:
         valid_actions.remove(Action.EAST)
+    if x+1>n and y+1 > m and grid[x+1,y+1] ==1:
+       valid_actions.remove(Action.DIAGONAL)
 
     return valid_actions
 

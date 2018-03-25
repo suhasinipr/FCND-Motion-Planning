@@ -51,6 +51,8 @@ The  `planning_utils.py` file contains the following functions that help in plan
 2. Action class: This class inherits from Enum class. it defines all the actions that the drone can take, namely, NORTH, SOUTH, EAST and WEST. It also defines two properties, delta that has the delta change required in the position to take a particular action and the cost which is the cost associated with taking a particular action. All the actions have equal cost.
 3. Valid actions function: This function returns a list of all the valid actions a drone can take from a particular cell in the grid. It removes a particular action from the valid action list if taking that action can lead to the drone hitting an obstacle.
 4. a_star: This is the searching algorithm. It uses Priority queues to sort based on the cost of the path. The algorithm is implemented as follows:
+
+
 ![a_star algorithm](./misc/a_star.png)
 5. heuristic: This function returns the normal distance between to points.
 

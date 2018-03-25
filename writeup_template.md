@@ -54,6 +54,8 @@ The  `planning_utils.py` file contains the following functions that help in plan
 
 
 ![a_star algorithm](./misc/a_star.png)
+
+
 5. heuristic: This function returns the normal distance between to points.
 
 ### Implementing Your Path Planning Algorithm
